@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ArgumentsValidatorImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">blueliv</a> &gt; <a href="index.source.html" class="el_package">dguerrar.test.blueliv.modules.validators.impl</a> &gt; <span class="el_source">ArgumentsValidatorImpl.java</span></div><h1>ArgumentsValidatorImpl.java</h1><pre class="source lang-java linenums">package dguerrar.test.blueliv.modules.validators.impl;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.devtools.common.options.OptionsParser;
+
+import dguerrar.test.blueliv.args.ArgumentsOptions;
+import dguerrar.test.blueliv.constants.ReaderOptions;
+import dguerrar.test.blueliv.dto.ArgumentsDTO;
+import dguerrar.test.blueliv.dto.FileReaderDTO;
+import dguerrar.test.blueliv.modules.GenericModule;
+
+import dguerrar.test.blueliv.modules.manager.ArgumentsValidator;
+import dguerrar.test.blueliv.modules.printer.Printer;
+import dguerrar.test.blueliv.modules.printer.impl.PrinterImpl;
+
+public class ArgumentsValidatorImpl extends GenericModule implements ArgumentsValidator{
+
+
+	
+<span class="fc" id="L22">	private static final Logger logger = LoggerFactory.getLogger(ArgumentsValidatorImpl.class);</span>
+
+	private static volatile ArgumentsValidator instance;
+
+	public static ArgumentsValidator getInstance() {
+<span class="fc bfc" id="L27" title="All 2 branches covered.">		if (instance == null) {</span>
+<span class="fc" id="L28">			instance = new ArgumentsValidatorImpl();</span>
+		}
+
+<span class="fc" id="L31">		return instance;</span>
+	}
+	
+	
+	private ArgumentsValidatorImpl() {
+<span class="fc" id="L36">		super();</span>
+<span class="fc" id="L37">	}</span>
+	
+
+	@Override
+	protected Class&lt;?&gt; getLogClass() {
+<span class="fc" id="L42">		return ArgumentsValidatorImpl.class;</span>
+	}
+
+	public ArgumentsDTO validate(ArgumentsDTO dto) {
+		
+<span class="fc" id="L47">		boolean ret= true;</span>
+<span class="fc" id="L48">		OptionsParser parser = OptionsParser.newOptionsParser(ArgumentsOptions.class);</span>
+<span class="fc" id="L49">		parser.parseAndExitUponError(dto.getArgs());</span>
+		
+<span class="fc" id="L51">		ArgumentsOptions options = parser.getOptions(ArgumentsOptions.class);</span>
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">		if (options.file.isEmpty() </span>
+<span class="pc bpc" id="L53" title="1 of 6 branches missed.">				|| (!options.file.isEmpty() &amp;&amp; options.id.isEmpty() &amp;&amp; options.city.isEmpty())</span>
+<span class="pc bpc" id="L54" title="1 of 6 branches missed.">				|| (!options.file.isEmpty() &amp;&amp; !options.city.isEmpty() &amp;&amp; !options.id.isEmpty()) )</span>
+				 {
+<span class="fc" id="L56">			Printer p=PrinterImpl.getInstance();</span>
+			
+<span class="fc" id="L58">			p.printArgsInfo(parser);</span>
+<span class="fc" id="L59">			ret=false;</span>
+			
+<span class="fc" id="L61">		}else {</span>
+<span class="fc bfc" id="L62" title="All 4 branches covered.">			FileReaderDTO frdto= new FileReaderDTO(options.file,(options.city.isEmpty()? ReaderOptions.ID:ReaderOptions.CITY),(options.city.isEmpty()? options.id:options.city));</span>
+<span class="fc" id="L63">			dto.setFileReaderDTO(frdto);</span>
+		}
+<span class="fc" id="L65">		dto.setResult(ret);</span>
+<span class="fc" id="L66">		return dto;</span>
+	}
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

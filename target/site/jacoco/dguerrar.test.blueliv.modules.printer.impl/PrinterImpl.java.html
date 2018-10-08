@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PrinterImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">blueliv</a> &gt; <a href="index.source.html" class="el_package">dguerrar.test.blueliv.modules.printer.impl</a> &gt; <span class="el_source">PrinterImpl.java</span></div><h1>PrinterImpl.java</h1><pre class="source lang-java linenums">package dguerrar.test.blueliv.modules.printer.impl;
+
+import java.util.Collections;
+import java.util.Set;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.devtools.common.options.OptionsParser;
+
+import dguerrar.test.blueliv.domain.Person;
+import dguerrar.test.blueliv.modules.GenericModule;
+import dguerrar.test.blueliv.modules.printer.Printer;
+
+public class PrinterImpl extends GenericModule implements Printer {
+
+<span class="fc" id="L17">	private static final Logger logger = LoggerFactory.getLogger(PrinterImpl.class);</span>
+
+	private static volatile Printer instance;
+
+	public static Printer getInstance() {
+<span class="fc bfc" id="L22" title="All 2 branches covered.">		if (instance == null) {</span>
+<span class="fc" id="L23">			instance = new PrinterImpl();</span>
+		}
+
+<span class="fc" id="L26">		return instance;</span>
+	}
+
+	private PrinterImpl() {
+<span class="fc" id="L30">		super();</span>
+<span class="fc" id="L31">	}</span>
+
+	public void printPeople(Set&lt;Person&gt; set) {
+<span class="pc bpc" id="L34" title="2 of 4 branches missed.">		if (null != set &amp;&amp; Boolean.FALSE == set.isEmpty()) {</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">			for (Person p : set) {</span>
+<span class="fc" id="L36">				System.out.print(p);</span>
+<span class="fc" id="L37">			}</span>
+		}
+
+<span class="fc" id="L40">	}</span>
+
+	public void printArgsInfo(OptionsParser parser) {
+
+<span class="pc bpc" id="L44" title="1 of 2 branches missed.">		if (null != parser) {</span>
+<span class="fc" id="L45">			System.out.println(&quot;Error parsing arguments. Please revise the correct syntax.&quot;);</span>
+<span class="fc" id="L46">			System.out.println(&quot;Usage: java -jar server.jar OPTIONS&quot;);</span>
+<span class="fc" id="L47">			System.out.println(</span>
+<span class="fc" id="L48">					parser.describeOptions(Collections.&lt;String, String&gt;emptyMap(), OptionsParser.HelpVerbosity.LONG));</span>
+
+		}
+
+<span class="fc" id="L52">	}</span>
+
+	@Override
+	protected Class&lt;?&gt; getLogClass() {
+<span class="fc" id="L56">		return PrinterImpl.class;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

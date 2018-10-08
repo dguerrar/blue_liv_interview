@@ -1,0 +1,16 @@
+dguerrar\test\blueliv\args\ArgumentsOptions.class
+dguerrar\test\blueliv\dto\ArgumentsDTO.class
+dguerrar\test\blueliv\main\App.class
+dguerrar\test\blueliv\dto\FileReaderDTO.class
+dguerrar\test\blueliv\modules\manager\FileReader.class
+dguerrar\test\blueliv\modules\validators\impl\ReaderValidatorImpl.class
+dguerrar\test\blueliv\constants\ReaderOptions.class
+dguerrar\test\blueliv\modules\printer\impl\PrinterImpl.class
+dguerrar\test\blueliv\modules\printer\Printer.class
+dguerrar\test\blueliv\modules\GenericModule.class
+dguerrar\test\blueliv\modules\manager\impl\FileReaderImpl.class
+dguerrar\test\blueliv\modules\validators\impl\ArgumentsValidatorImpl.class
+dguerrar\test\blueliv\dto\GenericDTO.class
+dguerrar\test\blueliv\modules\manager\ArgumentsValidator.class
+dguerrar\test\blueliv\domain\Person.class
+dguerrar\test\blueliv\modules\validators\ReaderValidator.class

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FileReaderImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">blueliv</a> &gt; <a href="index.source.html" class="el_package">dguerrar.test.blueliv.modules.manager.impl</a> &gt; <span class="el_source">FileReaderImpl.java</span></div><h1>FileReaderImpl.java</h1><pre class="source lang-java linenums">package dguerrar.test.blueliv.modules.manager.impl;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import dguerrar.test.blueliv.constants.ReaderOptions;
+import dguerrar.test.blueliv.domain.Person;
+import dguerrar.test.blueliv.dto.FileReaderDTO;
+import dguerrar.test.blueliv.modules.GenericModule;
+import dguerrar.test.blueliv.modules.manager.FileReader;
+import dguerrar.test.blueliv.modules.validators.ReaderValidator;
+import dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl;
+
+public class FileReaderImpl extends GenericModule implements FileReader {
+
+	private static final long serialVersionUID = 7349099902028049302L;
+
+<span class="fc" id="L27">	private static final Logger logger = LoggerFactory.getLogger(FileReaderImpl.class);</span>
+
+	private static volatile FileReader instance;
+
+	public static FileReader getInstance() {
+<span class="fc bfc" id="L32" title="All 2 branches covered.">		if (instance == null) {</span>
+<span class="fc" id="L33">			instance = new FileReaderImpl();</span>
+		}
+
+<span class="fc" id="L36">		return instance;</span>
+	}
+
+	private FileReaderImpl() {
+<span class="fc" id="L40">		super();</span>
+<span class="fc" id="L41">	}</span>
+
+	@Override
+	protected Class&lt;?&gt; getLogClass() {
+<span class="fc" id="L45">		return FileReaderImpl.class;</span>
+	}
+
+	public Set&lt;Person&gt; readAndProcessFile(FileReaderDTO dto) throws IllegalArgumentException {
+<span class="fc" id="L49">		logger.debug(&quot;--&gt;readAndProcessFile (dto: {})&quot;, dto);</span>
+<span class="fc" id="L50">		ReaderValidator validator = ReaderValidatorImpl.getInstance();</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">		if (Boolean.FALSE == validator.validateArgs(dto)) {</span>
+<span class="fc" id="L52">			throw new IllegalArgumentException(&quot;File does not exist&quot;);</span>
+		}
+
+<span class="fc" id="L55">		Set&lt;Person&gt; set = new HashSet&lt;Person&gt;();</span>
+
+<span class="fc" id="L57">		LineIterator it = null;</span>
+		try {
+<span class="fc" id="L59">			it = FileUtils.lineIterator(new File(dto.getFileName()), &quot;UTF-8&quot;);</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">			while (it.hasNext()) {</span>
+<span class="fc" id="L61">				String line = it.nextLine();</span>
+				// PROCESS line oNLY on data line
+<span class="fc bfc" id="L63" title="All 2 branches covered.">				if (line.startsWith(&quot;D&quot;)) {</span>
+					// replace ; by -
+<span class="fc" id="L65">					line = line.replace(';', ',');</span>
+
+<span class="fc" id="L67">					line = line.substring(1).trim();</span>
+					// split and get name and other info
+<span class="fc" id="L69">					String split[] = line.split(&quot;,&quot;);</span>
+<span class="pc bpc" id="L70" title="1 of 2 branches missed.">					if (split.length == 3) { //do not read erroneus lines</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">						if (dto.getOptionSelected() == ReaderOptions.CITY) {</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">							if (split[1].trim().equalsIgnoreCase(dto.getValue())) {// city</span>
+<span class="fc" id="L73">								Person p = new Person(split[0].trim(), split[2].replace(&quot;-&quot;, &quot;&quot;).trim());</span>
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">								if (Boolean.FALSE == set.contains(p)) {</span>
+<span class="fc" id="L75">									set.add(p);</span>
+								}
+<span class="fc" id="L77">							}</span>
+						} else {
+<span class="fc bfc" id="L79" title="All 2 branches covered.">							if (split[2].replace(&quot;-&quot;, &quot;&quot;).trim().equalsIgnoreCase(dto.getValue())) {// id</span>
+<span class="fc" id="L80">								Person p = new Person(split[1].trim());</span>
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">								if (Boolean.FALSE == set.contains(p)) {</span>
+<span class="fc" id="L82">									set.add(p);</span>
+								}
+							}
+						}
+					}
+				}
+
+<span class="fc" id="L89">			}</span>
+<span class="nc" id="L90">		} catch (IOException e) {</span>
+<span class="nc" id="L91">			logger.error(&quot;NON CONTROLLED ERROR READING FILE&quot;, e);</span>
+		} finally {
+<span class="pc bpc" id="L93" title="5 of 6 branches missed.">			if (null != it) {</span>
+<span class="pc" id="L94">				LineIterator.closeQuietly(it);</span>
+			}
+		}
+
+<span class="fc" id="L98">		logger.debug(&quot;&lt;--readAndProcessFile (set: {})&quot;, set);</span>
+<span class="fc" id="L99">		return set;</span>
+
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

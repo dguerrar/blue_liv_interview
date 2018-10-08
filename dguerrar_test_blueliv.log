@@ -1,0 +1,151 @@
+01:22:23,878 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@63c12fb0)
+01:22:23,884 6 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@63c12fb0
+01:22:23,891 13 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+01:22:23,906 28 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:97)) - <--readAndProcessFile (set: [Shelley Payne, 54808168L, 
+, Emilio Warner, 23803975X, 
+, Russell Pope, 69429384C, 
+, Ruben Daniels, 84604786E, 
+, Renee Anderson, 44340637H, 
+, Rhonda Hopkins, 54315871Z, 
+, Johnathan Cooper, 10863096N, 
+, Peter Daniel, 58204706D, 
+, Erica Burns, 93654902Y, 
+, Lowell Miles, 04217040J, 
+])
+01:22:23,915 37 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@48533e64)
+01:22:23,916 38 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@48533e64
+01:22:23,916 38 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+01:22:23,918 40 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:97)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+01:22:37,766 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@3339ad8e)
+01:22:37,769 3 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@3339ad8e
+01:22:37,778 12 DEBUG (dguerrar.test.blueliv.modules.manager.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+01:22:37,793 27 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:97)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+10:52:27,210 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:50)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@b1a58a3)
+10:52:27,222 12 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@b1a58a3
+10:52:27,238 28 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: false
+10:52:42,713 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:50)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396)
+10:52:42,728 15 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396
+10:52:42,744 31 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+10:52:42,759 46 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+10:52:42,775 62 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:50)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@7e0b37bc)
+10:52:42,775 62 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@7e0b37bc
+10:52:42,775 62 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+10:52:42,775 62 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [Shelley Payne, 54808168L, 
+, Emilio Warner, 23803975X, 
+, Russell Pope, 69429384C, 
+, Ruben Daniels, 84604786E, 
+, Renee Anderson, 44340637H, 
+, Rhonda Hopkins, 54315871Z, 
+, Johnathan Cooper, 10863096N, 
+, Peter Daniel, 58204706D, 
+, Erica Burns, 93654902Y, 
+, Lowell Miles, 04217040J, 
+])
+10:55:20,110 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:50)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396)
+10:55:20,125 15 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396
+10:55:20,125 15 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+10:55:20,157 47 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [Shelley Payne, 54808168L, 
+, Emilio Warner, 23803975X, 
+, Russell Pope, 69429384C, 
+, Ruben Daniels, 84604786E, 
+, Renee Anderson, 44340637H, 
+, Rhonda Hopkins, 54315871Z, 
+, Johnathan Cooper, 10863096N, 
+, Peter Daniel, 58204706D, 
+, Erica Burns, 93654902Y, 
+, Lowell Miles, 04217040J, 
+])
+10:55:20,157 47 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:50)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@7e0b37bc)
+10:55:20,157 47 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@7e0b37bc
+10:55:20,157 47 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+10:55:20,172 62 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+11:00:07,441 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@6d1e7682)
+11:00:07,441 0 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@6d1e7682
+11:00:07,504 63 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: false
+11:05:39,003 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@8519cb4)
+11:05:39,018 15 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@8519cb4
+11:05:39,034 31 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:05:39,096 93 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:05:39,128 125 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@4f3bbf68)
+11:05:39,128 125 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@4f3bbf68
+11:05:39,128 125 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:05:39,128 125 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:05:39,128 125 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f91b517)
+11:05:39,143 140 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f91b517
+11:05:39,143 140 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: false
+11:06:53,046 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396)
+11:06:53,046 0 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396
+11:06:53,062 16 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:06:53,078 32 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:06:53,078 32 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@66cd51c3)
+11:06:53,078 32 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@66cd51c3
+11:06:53,078 32 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:06:53,096 50 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:08:57,040 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396)
+11:08:57,056 16 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@6438a396
+11:08:57,073 33 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:08:57,089 49 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:08:57,104 64 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@66cd51c3)
+11:08:57,104 64 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@66cd51c3
+11:08:57,104 64 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:08:57,120 80 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [])
+11:09:58,459 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f191845)
+11:09:58,475 16 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f191845
+11:09:58,490 31 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:09:58,569 110 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+11:09:58,607 148 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@2421cc4)
+11:09:58,608 149 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@2421cc4
+11:09:58,609 150 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:09:58,616 157 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [Shelley Payne, 54808168L, 
+, Emilio Warner, 23803975X, 
+, Russell Pope, 69429384C, 
+, Ruben Daniels, 84604786E, 
+, Renee Anderson, 44340637H, 
+, Rhonda Hopkins, 54315871Z, 
+, Johnathan Cooper, 10863096N, 
+, Peter Daniel, 58204706D, 
+, Erica Burns, 93654902Y, 
+, Lowell Miles, 04217040J, 
+])
+11:09:58,618 159 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@30c93896)
+11:09:58,619 160 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@30c93896
+11:09:58,621 162 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: false
+11:11:05,697 0 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f191845)
+11:11:05,722 25 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@3f191845
+11:11:05,722 25 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:11:05,800 103 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [Shelley Payne, 54808168L, 
+, Emilio Warner, 23803975X, 
+, Russell Pope, 69429384C, 
+, Ruben Daniels, 84604786E, 
+, Renee Anderson, 44340637H, 
+, Rhonda Hopkins, 54315871Z, 
+, Johnathan Cooper, 10863096N, 
+, Peter Daniel, 58204706D, 
+, Erica Burns, 93654902Y, 
+, Lowell Miles, 04217040J, 
+])
+11:11:05,815 118 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@2421cc4)
+11:11:05,815 118 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@2421cc4
+11:11:05,815 118 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: true
+11:11:05,831 134 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:98)) - <--readAndProcessFile (set: [MADRID
+, BARCELONA
+, OVIEDO
+])
+11:11:05,831 134 DEBUG (dguerrar.test.blueliv.modules.manager.impl.FileReaderImpl.readAndProcessFile(FileReaderImpl.java:49)) - -->readAndProcessFile (dto: dguerrar.test.blueliv.dto.FileReaderDTO@30c93896)
+11:11:05,831 134 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:46)) - -->validateArgs ( dto: dguerrar.test.blueliv.dto.FileReaderDTO@30c93896
+11:11:05,831 134 DEBUG (dguerrar.test.blueliv.modules.validators.impl.ReaderValidatorImpl.validateArgs(ReaderValidatorImpl.java:50)) - <--validateArgs (ret: false
